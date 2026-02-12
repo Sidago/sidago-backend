@@ -1,0 +1,1 @@
+# sidago-strapi
