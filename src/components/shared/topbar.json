@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_shared_topbars",
+  "info": {
+    "displayName": "Topbar",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {},
+  "config": {}
+}

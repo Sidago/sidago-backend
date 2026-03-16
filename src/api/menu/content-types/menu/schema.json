@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "Menu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "isCurrent": {
+      "type": "boolean"
+    },
+    "isMegaMenu": {
+      "type": "boolean"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "label"
+    },
+    "mega_menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mega-menu.mega-menu",
+      "mappedBy": "menu"
+    }
+  }
+}

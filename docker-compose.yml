@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  sidago-backend:
+    env_file:
+      - .env
+    image: sidago-backend:latest
+    container_name: sidago-backend
+    ports:
+      - "9001:9001"
+    restart: unless-stopped

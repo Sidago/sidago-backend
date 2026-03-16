@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mega_menus",
+  "info": {
+    "singularName": "mega-menu",
+    "pluralName": "mega-menus",
+    "displayName": "Mega Menu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu",
+      "inversedBy": "mega_menu"
+    },
+    "menu_item": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::menu-item.menu-item",
+      "inversedBy": "mega_menus"
+    }
+  }
+}

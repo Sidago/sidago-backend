@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_items",
+  "info": {
+    "singularName": "menu-item",
+    "pluralName": "menu-items",
+    "displayName": "Menu Item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "menu_item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu-item.menu-item"
+    },
+    "mega_menus": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mega-menu.mega-menu",
+      "mappedBy": "menu_item"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "collectionName": "components_sections_ctas",
+    "info": {
+        "displayName": "CTA Section"
+    },
+    "attributes": {
+        "heading": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "buttonText": {
+            "type": "string"
+        },
+        "buttonUrl": {
+            "type": "string"
+        },
+        "backgroundImage": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": ["images"]
+        }
+    }
+}

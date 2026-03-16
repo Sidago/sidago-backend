@@ -1,0 +1,32 @@
+{
+    "collectionName": "components_sections_heroes",
+    "info": {
+        "displayName": "Hero Section"
+    },
+    "attributes": {
+        "heading": {
+            "type": "string"
+        },
+        "subheading": {
+            "type": "text"
+        },
+        "backgroundVideo": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": ["videos"]
+        },
+        "backgroundImage": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": ["images"]
+        },
+        "overlayOpacity": {
+            "type": "decimal",
+            "default": 0.7
+        },
+        "enableDotMatrixText": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}

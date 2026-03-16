@@ -1,0 +1,30 @@
+{
+    "kind": "singleType",
+    "collectionName": "homepages",
+    "info": {
+        "singularName": "homepage",
+        "pluralName": "homepages",
+        "displayName": "Homepage"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "seo": {
+            "type": "component",
+            "component": "shared.seo"
+        },
+        "sections": {
+            "type": "dynamiczone",
+            "components": [
+                "sections.hero",
+                "sections.statistics",
+                "sections.cards",
+                "sections.cta"
+            ]
+        }
+    }
+}
