@@ -1,0 +1,9 @@
+node_modules
+.cache
+.strapi
+.tmp
+build
+public/uploads/*
+!public/uploads/.gitkeep
+.DS_Store
+config.bat
